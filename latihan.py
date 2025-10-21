@@ -34,18 +34,13 @@ class Hewan :
         self.name = name
         self.type = type
         
-    def info(self) :
-        print("\n============= Output : =============\n")
-        print(f"""nama hewan : {self.name}
-jenis hewan : {self.type}""")
-        
 class Kucing(Hewan) :
     def __init__(self, name, type, voice):
         super().__init__(name, type)
         self.voice = voice
         
     def info(self) :
-        print("\n============= Output : =============\n")
+        print("============= Output : =============\n")
         print(f"""nama hewan : {self.name}
 jenis hewan : {self.type}
 suara hewa : {self.voice}""")
@@ -62,11 +57,16 @@ class Products() :
         self.price = price
         self.stock = stock
         
-    def info(self):
-        print("\n============= Output : =============\n")
-        print(f"""nama produk : {self.name}
-harga produk : {self.price}
-jumlah stock : {self.stock}""")
+class Laptop(Products) :
+    def __init__(self, name, price, stock, processor):
+        super().__init__(name, price, stock)
+        self.processor = processor
         
-tuf = Products('tuf', 10000000, 100)
-tuf.info()
+class Hp(Products) :
+    def __init__(self, name, price, stock, ram):
+        super().__init__(name, price, stock)
+        self.ram = ram
+        
+
+list_products = []
+
