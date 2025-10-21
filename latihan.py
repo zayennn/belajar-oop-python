@@ -8,3 +8,6 @@ class Mahasiswa:
     def info(self) :
         print("============= latihan 1 =============")
         print(f"")
+        
+mahasiswa = Mahasiswa('test', 123, 'test')
+mahasiswa.info()
