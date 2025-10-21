@@ -52,3 +52,21 @@ suara hewa : {self.voice}""")
         
 kucing = Kucing('Mochi', 'Kucing', 'Meow~')
 kucing.info()
+
+
+# ============= latihan 3 =============
+print("\n============= latihan 3 =============")
+class Products() :
+    def __init__(self, name, price, stock):
+        self.name = name
+        self.price = price
+        self.stock = stock
+        
+    def info(self):
+        print("\n============= Output : =============\n")
+        print(f"""nama produk : {self.name}
+harga produk : {self.price}
+jumlah stock : {self.stock}""")
+        
+tuf = Products('tuf', 10000000, 100)
+tuf.info()
