@@ -7,6 +7,7 @@ class Mahasiswa:
         
     def info(self) :
         print("\n============= latihan 1 =============\n")
+        print("============= Output : =============\n")
         print(f"""nama mahasiswa : {self.name}
 nim maahasiswa : {self.nim}""")
         
