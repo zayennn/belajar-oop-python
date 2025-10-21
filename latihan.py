@@ -38,6 +38,8 @@ prosesor yang digunakan : {self.processor}
 list_products = []
 
 while True :
+    print("============= Daftar Menu : =============\n")
+    
     print('1. tambah produk baru')
     print('2. lihat daftar list produk')
     print('3. keluar dari program')
@@ -57,16 +59,16 @@ while True :
             ram = int(input('masukin jumlah kapasitas ram : '))
             product = Hp(name, price, stock, ram)
         else :
-            print('produk tidak di kenali!')
+            print('\nproduk tidak di kenali!\n')
         
         list_products.append(product)
-        print(f"{type.title()} '{name} berhasil ditambahkan!")
+        print(f"\n{type.title()} '{name} berhasil ditambahkan!\n")
         
     elif choice == 2 :
         print("\n============= List Produk : =============\n")
         
         if len(list_products) == 0 :
-            print('belum ada produk, silahkah tambahkan produk terlebih dahulu')
+            print('\nbelum ada produk, silahkah tambahkan produk terlebih dahulu\n')
         else : 
             for i, products in enumerate(list_products, start=1) :
                 print(f"{i}. ", end="")
