@@ -67,6 +67,30 @@ class Hp(Products) :
         super().__init__(name, price, stock)
         self.ram = ram
         
-
 list_products = []
 
+print('1. tambah produk baru')
+print('2. lihat daftar list produk')
+print('3. keluar dari program')
+
+choice = int(input('pilih menu (1/2/3) : '))
+
+if choice == 1 :
+    type = input('masukan tipe produk (laptop/hp) : ').lower()
+    name = input('masukan nama produk : ').capitalize()
+    price = int(input('masukan harga produk : '))
+    stock = int(input('masukan stock produk : '))
+    
+    
+    if type == "laptop" :
+        processor = input('masukan tipe prosesor : ').capitalize()
+        product = Laptop(name, price, stock, processor)
+    elif type == "hp" :
+        ram = int(input('masukin jumlah kapasitas ram : '))
+        product = Hp(name, price, stock, ram)
+    else :
+        print('produk tidak di kenali!')
+    
+    list_products.append(product)
+    
+        
