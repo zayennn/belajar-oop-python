@@ -29,3 +29,13 @@ else :
     
 # ============= latihan 2 =============
 print("\n============= latihan 2 =============\n")
+class Hewan :
+    def __init__(self, name, type):
+        self.name = name
+        self.type = type
+        
+    def info(self) :
+        print("\n============= Output : =============\n")
+        print(f"""nama hewan : {self.name}
+jenis hewan : {self.type}""")
+        
