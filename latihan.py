@@ -6,7 +6,7 @@ class Mahasiswa:
         self.major = major
         
     def info(self) :
-        print("============= latihan 1 =============")
+        print("\n============= latihan 1 =============\n")
         print(f"")
         
 mahasiswa = Mahasiswa('test', 123, 'test')
