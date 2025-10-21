@@ -93,4 +93,11 @@ if choice == 1 :
     
     list_products.append(product)
     
-        
+elif choice == 2 :
+    while True :
+        if len(list_products) == 0 :
+            print('belum ada produk, silahkah tambahkan produk terlebih dahulu')
+        else : 
+            for i, products in enumerate(list_products, start=1) :
+                print(f"{i}. ", end="")
+                print(f"""nama produk : {products.name}""")
