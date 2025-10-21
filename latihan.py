@@ -28,7 +28,7 @@ else :
     
     
 # ============= latihan 2 =============
-print("\n============= latihan 2 =============\n")
+print("\n============= latihan 2 =============")
 class Hewan :
     def __init__(self, name, type):
         self.name = name
@@ -39,3 +39,5 @@ class Hewan :
         print(f"""nama hewan : {self.name}
 jenis hewan : {self.type}""")
         
+kucing = Hewan('mochi', 'kucing')
+kucing.info()
