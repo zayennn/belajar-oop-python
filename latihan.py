@@ -73,3 +73,10 @@ while True :
             for i, products in enumerate(list_products, start=1) :
                 print(f"{i}. ", end="")
                 products.info()
+        
+    elif choice == 3 :
+        print('\nkeluar dari program...\n')
+        break
+    
+    else :
+        print('\nmenu tidak ditemukan, pilih daftar menu yang valid!\n')
