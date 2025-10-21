@@ -39,5 +39,16 @@ class Hewan :
         print(f"""nama hewan : {self.name}
 jenis hewan : {self.type}""")
         
-kucing = Hewan('mochi', 'kucing')
+class Kucing(Hewan) :
+    def __init__(self, name, type, voice):
+        super().__init__(name, type)
+        self.voice = voice
+        
+    def info(self) :
+        print("\n============= Output : =============\n")
+        print(f"""nama hewan : {self.name}
+jenis hewan : {self.type}
+suara hewa : {self.voice}""")
+        
+kucing = Kucing('Mochi', 'Kucing', 'Meow~')
 kucing.info()
