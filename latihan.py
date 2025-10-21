@@ -25,3 +25,7 @@ if name and nim and major :
     data_mahasiswa.info()
 else : 
     print('data mahasiswa tidak boleh kosong!')
+    
+    
+# ============= latihan 2 =============
+print("\n============= latihan 2 =============\n")
