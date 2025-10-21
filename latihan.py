@@ -68,7 +68,7 @@ while True :
         print("\n============= List Produk : =============\n")
         
         if len(list_products) == 0 :
-            print('\nbelum ada produk, silahkah tambahkan produk terlebih dahulu\n')
+            print('belum ada produk, silahkah tambahkan produk terlebih dahulu\n')
         else : 
             for i, products in enumerate(list_products, start=1) :
                 print(f"{i}. ", end="")
