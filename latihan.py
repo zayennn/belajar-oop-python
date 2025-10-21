@@ -63,7 +63,6 @@ class Laptop(Products) :
         self.processor = processor
         
     def info(self) :
-            print("============= Output : =============\n")
             print(f"""nama produk : {self.name}
 harga produk : {self.price}
 jumlah stok produk : {self.stock}
@@ -75,9 +74,8 @@ class Hp(Products) :
         super().__init__(name, price, stock)
         self.ram = ram
         
-        def info(self) :
-            print("============= Output : =============\n")
-            print(f"""nama produk : {self.name}
+    def info(self) :
+        print(f"""nama produk : {self.name}
 harga produk : {self.price}
 jumlah stok produk : {self.stock}
 ram yang tersedia : {self.ram}
