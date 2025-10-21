@@ -80,7 +80,7 @@ class Hp(Products) :
             print(f"""nama produk : {self.name}
 harga produk : {self.price}
 jumlah stok produk : {self.stock}
-prosesor yang digunakan : {self.processor}
+ram yang tersedia : {self.ram}
 """)
 
 list_products = []
