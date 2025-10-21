@@ -8,8 +8,20 @@ class Mahasiswa:
     def info(self) :
         print("\n============= latihan 1 =============\n")
         print("============= Output : =============\n")
-        print(f"""nama mahasiswa : {self.name}
-nim maahasiswa : {self.nim}""")
+        print(f"""nama mahasiswa                 : {self.name}
+nim maahasiswa                 : {self.nim}
+jurusan yang diambil mahasiswa : {self.major}""")
         
-mahasiswa = Mahasiswa('test', 123, 'test')
-mahasiswa.info()
+# input data mahasiswa
+name = input('masukan nama mahasiswa : ').capitalize()
+nim = int(input('masukan nim mahasiswa : '))
+major = input('masukan jurusan yang di ambil mahasiswa : ').capitalize()
+
+if name and nim and major :
+    name = name
+    nim = nim
+    major = major
+    data_mahasiswa = Mahasiswa(name, nim, major)
+    data_mahasiswa.info()
+else : 
+    print('data mahasiswa tidak boleh kosong!')
