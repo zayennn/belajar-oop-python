@@ -32,3 +32,19 @@ panjang.hitung_luas()
 
 
 # latihan 3
+class NilaiMahasiswa() :
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+    
+    def check_kelulusan(self) :
+        print(f"""
+nama mahasiswa : {self.name}
+nilai mahasiswa : {self.score}
+status mahasiswa {"lulus" if self.score >= 60 else "tidak lulus"}
+""")
+        
+nama_mahasiswa = input('masukan nama mahasiswa : ').capitalize
+nilai = int(input('masukan nilai : '))
+
+mahasiswa = NilaiMahasiswa(nama_mahasiswa, nilai)
