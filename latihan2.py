@@ -54,4 +54,22 @@ mahasiswa.check_kelulusan()
 # latihan 4
 class Kendaraan() :
     def __init__(self, merk, year):
+        self.merk = merk
+        self.year = year
         
+class JumlahPintu (Kendaraan) :
+    def __init__(self, merk, year, jumlah_pintu):
+        super().__init__(merk, year)
+        
+        self.jumlah_pintu = jumlah_pintu
+        
+    def info_kendaraan(self) :
+        print(f"""
+merk kendaraan : {self.merk}
+tahun keluaran : {self.year}
+jumlah pintu mobil : {self.jumlah_pintu}              
+""")
+        
+        
+bmwm2 = JumlahPintu("BMW M2", "2024", 2)
+bmwm2.info_kendaraan()
