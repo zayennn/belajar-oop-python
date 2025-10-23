@@ -63,10 +63,10 @@ class Laptop(Products) :
         self.processor = processor
         
     def info(self) :
-            print(f"""nama produk : {self.name}
-harga produk : {self.price}
-jumlah stok produk : {self.stock}
-prosesor yang digunakan : {self.processor}
+            print(f"""nama produk             : {self.name}
+   harga produk            : {self.price}
+   jumlah stok produk      : {self.stock}
+   prosesor yang digunakan : {self.processor}
 """)
         
 class Hp(Products) :
@@ -75,10 +75,10 @@ class Hp(Products) :
         self.ram = ram
         
     def info(self) :
-        print(f"""nama produk : {self.name}
-harga produk : {self.price}
-jumlah stok produk : {self.stock}
-ram yang tersedia : {self.ram}
+        print(f"""nama produk       : {self.name}
+   harga produk       : {self.price}
+   jumlah stok produk : {self.stock}
+   ram yang tersedia  : {self.ram}
 """)
 
 list_products = []
@@ -108,7 +108,7 @@ while True :
             print('\nproduk tidak di kenali!\n')
         
         list_products.append(product)
-        print(f"\n{type.title()} '{name} berhasil ditambahkan!\n")
+        print(f"\n{type.title()} '{name}' berhasil ditambahkan!\n")
         
     elif choice == 2 :
         print("\n============= List Produk : =============\n")
