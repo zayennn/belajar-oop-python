@@ -73,3 +73,6 @@ jumlah pintu mobil : {self.jumlah_pintu}
         
 bmwm2 = JumlahPintu("BMW M2", "2024", 2)
 bmwm2.info_kendaraan()
+
+
+# latihan 5
