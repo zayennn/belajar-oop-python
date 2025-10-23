@@ -1,3 +1,4 @@
+# latihan 1
 class Buah() :
     def __init__(self, name, color):
         self.name = name
