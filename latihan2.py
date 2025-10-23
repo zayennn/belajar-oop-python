@@ -29,3 +29,6 @@ hitung keliling = {2 * (self.panjang + self.lebar)}
         
 panjang = PersegiPanjang(50, 70)
 panjang.hitung_luas()
+
+
+# latihan 3
