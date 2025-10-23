@@ -101,3 +101,6 @@ total_jumlah_gaji = gaji_pokok + tunjangan
 
 info = Manager(nama, total_jumlah_gaji, tunjangan)
 info.total_gaji()
+
+
+# latihan 7
