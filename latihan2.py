@@ -41,10 +41,14 @@ class NilaiMahasiswa() :
         print(f"""
 nama mahasiswa : {self.name}
 nilai mahasiswa : {self.score}
-status mahasiswa {"lulus" if self.score >= 60 else "tidak lulus"}
+status mahasiswa : {"lulus" if self.score >= 60 else "tidak lulus"}
 """)
         
-nama_mahasiswa = input('masukan nama mahasiswa : ').capitalize
+nama_mahasiswa = input('masukan nama mahasiswa : ').capitalize()
 nilai = int(input('masukan nilai : '))
 
 mahasiswa = NilaiMahasiswa(nama_mahasiswa, nilai)
+mahasiswa.check_kelulusan()
+
+
+# latihan 4
