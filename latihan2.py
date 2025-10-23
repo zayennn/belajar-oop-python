@@ -52,3 +52,6 @@ mahasiswa.check_kelulusan()
 
 
 # latihan 4
+class Kendaraan() :
+    def __init__(self, merk, year):
+        
